@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
+    float smooth = 100.0f;
+    
     
     //Access the Player Sprite Renderer
     private SpriteRenderer playerSR;
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         
+      
 
         //Check to see what direction we're moving
         if (movement.x < 0){
@@ -60,6 +63,32 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue movePosition){
         //Get the Player position
         movement = movePosition.Get<Vector2>();
+    }
+
+    void OnDown()
+    {
+            // Smoothly tilts a transform towards a target rotation.
+     
+        
+
+        // Rotate the cube by converting the angles into a quaternion.
+        Quaternion target = Quaternion.Euler(0, 180, 10);
+
+        // Dampen towards the target rotation
+        transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
+    }
+
+    void OnUp()
+    {
+            // Smoothly tilts a transform towards a target rotation.
+        
+        
+
+        // Rotate the cube by converting the angles into a quaternion.
+        Quaternion target = Quaternion.Euler(0, 180, -10);
+
+        // Dampen towards the target rotation
+        transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
     }
 
     
