@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
-    float smooth = 100.0f;
+    float smooth = 50.0f;
     
     
     //Access the Player Sprite Renderer
