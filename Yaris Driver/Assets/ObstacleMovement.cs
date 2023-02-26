@@ -41,7 +41,7 @@ public class ObstacleMovement : MonoBehaviour
     // extracts direction of rangetoclose
         Vector3 normRangeToClose = rangeToClose.normalized;
         // draws normal
-        Debug.DrawRay(predatorPosition, normRangeToClose, Color.white);
+   //     Debug.DrawRay(predatorPosition, normRangeToClose, Color.white);
 
          
 

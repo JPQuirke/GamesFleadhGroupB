@@ -14,19 +14,20 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnPause()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            if(isPaused)
-            {
-                ResumeGame();
-            }
-            else{
+        
+            
+            if (isPaused == false) {
                 PauseGame();
             }
+            else{
+                ResumeGame();
+            }
+                
+            
 
-        }
+        
     }
 
     public void PauseGame()
@@ -54,3 +55,4 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 }
+

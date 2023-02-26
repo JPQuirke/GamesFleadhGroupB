@@ -40,7 +40,7 @@ public class HealthManager : MonoBehaviour
         healthbar.fillAmount = healthAmount / 100f;
     }
 
-
+/*
     void onClick()
     {
         
@@ -54,5 +54,5 @@ public class HealthManager : MonoBehaviour
         
             Heal(5);
         
-    }
+    } */
 }

@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
 
+   
+
     float smooth = 50.0f;
     
     
@@ -90,6 +92,8 @@ public class PlayerMovement : MonoBehaviour
         // Dampen towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
     }
+
+    
 
     
 }
