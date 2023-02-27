@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public Image healthbar;
-    public float healthAmount = 100f;
+    public TextMeshProUGUI Health1;
+    public TextMeshProUGUI Health2;
+    public TextMeshProUGUI Health3;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,20 +25,23 @@ public class HealthManager : MonoBehaviour
       
        
     }
-
-    public void TakeDamage(float damage)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        healthAmount -=damage;
-        healthbar.fillAmount = healthAmount /100f;
-    }
-
-    public void Heal(float healingAmount)
-    {
-        healthAmount +=healingAmount;
-
-        healthAmount = Mathf.Clamp(healthAmount, 0 , 100);
-
-        healthbar.fillAmount = healthAmount / 100f;
+        if(collision.collider.tag =="Collectables")
+        {
+                 health -= 1;
+                if (health == 2){
+                  Health1.enabled = false;
+                }
+                if (health == 1){
+                 Health2.enabled = false;
+                }
+                if (health == 0){
+                    Health3.enabled = false;
+                   Debug.Log("You have Died");
+                   Death.StartGame();
+                }
+        }
     }
 
 /*
@@ -55,4 +59,6 @@ public class HealthManager : MonoBehaviour
             Heal(5);
         
     } */
+
+  
 }
