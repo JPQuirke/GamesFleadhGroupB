@@ -13,6 +13,8 @@ public class HealthManager : MonoBehaviour
 
     public defeatMenu defeatMenu;
 
+   public int repair = 1;
+
 
     
 
@@ -35,9 +37,9 @@ public class HealthManager : MonoBehaviour
       
        
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag =="Collectables")
+        if(collision.collider.tag =="Collectables" || collision.collider.tag =="Obstacle")
         {
                  health -= 1;
                 if (health == 2){
@@ -51,7 +53,26 @@ public class HealthManager : MonoBehaviour
                    Debug.Log("You have Died");
                    
                 }
+
+                
+
         }
+        else if(collision.collider.tag=="Wrench")
+        {
+            health +=1;
+            if (health == 2){
+                  Health2.enabled = true;
+                }
+                if (health == 3){
+                 Health1.enabled = true;
+                }
+                
+                   
+        }
+        
+
+        
+
     }
 
 /*
@@ -69,6 +90,5 @@ public class HealthManager : MonoBehaviour
             Heal(5);
         
     } */
-
-  
 }
+

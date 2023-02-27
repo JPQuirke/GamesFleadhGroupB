@@ -33,7 +33,7 @@ public class RadioController : MonoBehaviour
             currentClipIndex = (currentClipIndex + 1) % audioClips.Length;
             audioSource.clip = audioClips[currentClipIndex];
             audioSource.Play();
-            Debug.Log("SOund is playing");
+            Debug.Log("Sound is playing");
         }
 
         void OnG()

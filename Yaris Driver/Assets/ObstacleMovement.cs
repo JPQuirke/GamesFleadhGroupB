@@ -7,19 +7,18 @@ public class ObstacleMovement : MonoBehaviour
     public GameObject target;
     public float speed;
 
+     int chaseRange=75;
+
     
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
     {
         float speedDelta = speed * Time.deltaTime;
 
-        Vector3 newPosition = Vector3.MoveTowards(transform.position, target.transform.position, speedDelta);
+        Vector3 newPosition = MoveTowards(transform.position, target.transform.position, speedDelta);
 
         transform.position = newPosition;
 
@@ -27,15 +26,17 @@ public class ObstacleMovement : MonoBehaviour
 
 
     }
-   Vector3 tusMoveTowards(Vector3 predatorPosition, Vector3 target, float maxDistanceDelta)
+   Vector3 MoveTowards(Vector3 predatorPosition, Vector3 target, float maxDistanceDelta)
     {
      // Draws vector that contaons distance from the predator to the target and also contains distance
      Vector3 rangeToClose = target - predatorPosition;
        // draws a line that represents the distance from the enemy to the player
-        Debug.DrawRay(predatorPosition, rangeToClose, Color.green);
+        //Debug.DrawRay(predatorPosition, rangeToClose, Color.green);
         // extracts distance of rangetoclose
         float distance =rangeToClose.magnitude;
         // could use distance for when player is in range
+
+        Debug.Log("the Distance: " + distance);
 
    //     Debug.Log("The distance" + distance);
     // extracts direction of rangetoclose
@@ -43,11 +44,22 @@ public class ObstacleMovement : MonoBehaviour
         // draws normal
    //     Debug.DrawRay(predatorPosition, normRangeToClose, Color.white);
 
+
+if(distance<chaseRange)
+{
+    // new position is going to be current predator position + our speed delta along the direction
+Vector3 newPosition = predatorPosition + normRangeToClose * maxDistanceDelta;
+            return newPosition;
+}
+else
+{
+return predatorPosition;
+}
          
 
-         // new position is going to be current predator position + our speed delta along the direction
-           Vector3 newPosition = predatorPosition - normRangeToClose * maxDistanceDelta;
-            return newPosition;
+         
+
+
            
   
     }
