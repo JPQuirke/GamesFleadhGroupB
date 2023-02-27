@@ -24,7 +24,6 @@ public class wrenchBeahaviour : MonoBehaviour
             
             Debug.Log("The player was healed");
 
-            healthManager.TakeDamage(10);
 
             //healthManager.Heal(5);
 

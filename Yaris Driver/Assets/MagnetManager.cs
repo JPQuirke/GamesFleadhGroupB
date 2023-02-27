@@ -15,7 +15,7 @@ public class MagnetManager : MonoBehaviour
     {
         
     }
-
+/*
        public void OnCollisionEnter2D(Collision2D collision) {
         if (collision.collider.tag == "Item"){
             
@@ -25,5 +25,5 @@ public class MagnetManager : MonoBehaviour
 
             Destroy(item);
         }
-    }
+    }*/
 }

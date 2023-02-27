@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
+        int health = 3;
     public TextMeshProUGUI Health1;
     public TextMeshProUGUI Health2;
     public TextMeshProUGUI Health3;
@@ -39,7 +41,7 @@ public class HealthManager : MonoBehaviour
                 if (health == 0){
                     Health3.enabled = false;
                    Debug.Log("You have Died");
-                   Death.StartGame();
+                   
                 }
         }
     }
