@@ -28,7 +28,7 @@ public class RadioController : MonoBehaviour
             }
         }
 
-        void Onsound()
+        void OnF()
         {
             currentClipIndex = (currentClipIndex + 1) % audioClips.Length;
             audioSource.clip = audioClips[currentClipIndex];
@@ -36,7 +36,7 @@ public class RadioController : MonoBehaviour
             Debug.Log("SOund is playing");
         }
 
-        void OnS()
+        void OnG()
         {
             currentClipIndex--;
             if (currentClipIndex < 0)

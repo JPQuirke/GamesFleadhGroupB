@@ -10,19 +10,27 @@ public class HealthManager : MonoBehaviour
     public TextMeshProUGUI Health1;
     public TextMeshProUGUI Health2;
     public TextMeshProUGUI Health3;
+
+    public defeatMenu defeatMenu;
+
+
+    
+
+ //   DefeatMenu defeatMenu;
     // Start is called before the first frame update
     void Start()
     {
-        
+        defeatMenu defeatMenu = gameObject.GetComponent<defeatMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       /* if (healthAmount <=0)
+        if (health  <1)
         {
-             Application.LoadLevel(Application.loadLevel);
-        } */
+             
+            defeatMenu.OnDefeat();
+        } 
 
       
        

@@ -45,13 +45,13 @@ public class PlayerMovement : MonoBehaviour
       
 
         //Check to see what direction we're moving
-        if (movement.x < 0){
+   /*     if (movement.x < 0){
             //Flip the player
             playerSR.flipX = true;
         }
         else {
             playerSR.flipX = false;
-        }
+        } */
         
        
     }
