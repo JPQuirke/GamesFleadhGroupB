@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class wrenchBeahaviour : MonoBehaviour
+public class FuelBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,13 +20,12 @@ public class wrenchBeahaviour : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            HealthManager healthManager = collision.gameObject.GetComponent<HealthManager>();
             
-            Debug.Log("The player was healed");
+            
+            Debug.Log("The Player got fuel");
 
 
-            //healthManager.Heal(5);
-
+           
             Destroy(gameObject);
         }
 

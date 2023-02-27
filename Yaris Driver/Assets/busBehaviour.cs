@@ -29,5 +29,10 @@ public class busBehaviour : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        if(collision.collider.tag == "ObstacleMagnet")
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -20,13 +20,12 @@ public class OilBehaviour : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            HealthManager healthManager = collision.gameObject.GetComponent<HealthManager>();
             
-            //Debug.Log("The Player took damage");
+            Destroy(gameObject);
+        }
 
-
-            //healthManager.Heal(5);
-
+        if(collision.collider.tag == "ObstacleMagnet")
+        {
             Destroy(gameObject);
         }
     }
