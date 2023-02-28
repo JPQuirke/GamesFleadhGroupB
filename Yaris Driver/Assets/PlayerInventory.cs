@@ -31,8 +31,8 @@ public class PlayerInventory : MonoBehaviour
 
             Destroy(collectable);
 
-            busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
-            busAudio.Play();
+       //     busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
+        //    busAudio.Play();
 
             
         }
