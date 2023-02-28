@@ -34,7 +34,7 @@ public class PlayerInventory : MonoBehaviour
             busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
             busAudio.Play();
 
-            Debug.Log("Player now has: " + hilk + "Hilk in their inventory. ");
+            
         }
         
         Debug.Log("Player collided with: " + collision.collider.name);
