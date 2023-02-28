@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class busBehaviour : MonoBehaviour
 {
+    public AudioClip audioFile;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +26,11 @@ public class busBehaviour : MonoBehaviour
             
             Debug.Log("The Player took damage");
 
+           
 
-            //healthManager.Heal(5);
+
+
+            
 
             Destroy(gameObject);
         }
