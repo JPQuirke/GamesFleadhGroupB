@@ -53,6 +53,12 @@ public class FuelManager : MonoBehaviour
         hasFuel = true;
     }
 
-   // void OnCollisionEnter2D
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Fuel")
+        {
+            fuelAmount+=15f;
+        }
+    }
 
 }

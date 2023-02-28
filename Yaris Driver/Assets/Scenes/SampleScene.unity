@@ -720,7 +720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360462, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443323367729, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1372,12 +1372,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344509274}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -29.782139, y: -16.922989, z: -0.009510037}
+  m_LocalPosition: {x: -10.82, y: 0.20000076, z: 0}
   m_LocalScale: {x: 16, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1906283589}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &432679992 stripped
 MonoBehaviour:
@@ -1853,6 +1853,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619044907}
   m_CullTransparentMesh: 1
+--- !u!1 &643979608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6100667444080078848, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
+  m_PrefabInstance: {fileID: 146997186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &674643500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8618989544825142996, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
@@ -5604,7 +5609,6 @@ GameObject:
   - component: {fileID: 1495411667}
   - component: {fileID: 1495411668}
   - component: {fileID: 1495411669}
-  - component: {fileID: 1495411670}
   m_Layer: 0
   m_Name: Yaris
   m_TagString: Player
@@ -5788,7 +5792,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuelText: {fileID: 224588998}
-  fuelDecreasePerSecond: 1
+  fuelDecreasePerSecond: 10
+  noFuel: {fileID: 643979608}
+  hasFuel: 0
 --- !u!114 &1495411667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5832,20 +5838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defeat: {fileID: 1388158933}
   isDefeated: 0
---- !u!114 &1495411670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495411657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bf88f008dfa64d46ba986ea3c1b7a31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuelText: {fileID: 224588998}
-  fuelDecreasePerSecond: 0
 --- !u!1 &1597049267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9128259847192379157, guid: 67ba55ec7db3327409fc6c84a5cd0d66, type: 3}
@@ -8125,7 +8117,6 @@ Transform:
   - {fileID: 949651941}
   - {fileID: 469620989}
   - {fileID: 579429461}
-  - {fileID: 344509277}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8860,7 +8851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1079627664444056207, guid: 87af694a547cffa40ba1f000a0a1dad2, type: 3}
       propertyPath: m_TagString
-      value: Item
+      value: Fuel
       objectReference: {fileID: 0}
     - target: {fileID: 3382958274709895336, guid: 87af694a547cffa40ba1f000a0a1dad2, type: 3}
       propertyPath: m_Constraints
