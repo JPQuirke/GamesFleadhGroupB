@@ -75,20 +75,6 @@ public class HealthManager : MonoBehaviour
 
     }
 
-/*
-    void onClick()
-    {
-        
-        
-            TakeDamage(20);
-        
-    }
 
-    void onFire()
-    {
-        
-            Heal(5);
-        
-    } */
 }
 
