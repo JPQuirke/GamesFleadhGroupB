@@ -36,7 +36,7 @@ public class ObstacleMovement : MonoBehaviour
         float distance =rangeToClose.magnitude;
         // could use distance for when player is in range
 
-        Debug.Log("the Distance: " + distance);
+        //Debug.Log("the Distance: " + distance);
 
    //     Debug.Log("The distance" + distance);
     // extracts direction of rangetoclose
