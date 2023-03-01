@@ -26,12 +26,6 @@ public class busBehaviour : MonoBehaviour
             
             Debug.Log("The Player took damage");
 
-           
-
-
-
-            
-
             Destroy(gameObject);
         }
 

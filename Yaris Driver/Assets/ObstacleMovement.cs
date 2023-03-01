@@ -55,13 +55,6 @@ else
 {
 return predatorPosition;
 }
-         
-
-         
-
-
-           
-  
     }
 
  
