@@ -42,11 +42,19 @@ public class PlayerInventory : MonoBehaviour
            hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
            hilkAudio.Play();
             
-          /*coneAudio.clip=collectable.GetComponent<ConeBehaviour>().audioFile;
+            coneAudio.clip=collectable.GetComponent<ConeBehaviour>().audioFile;
             coneAudio.Play();
            
-           wrenchAudio.clip=collectable.GetComponent<wrenchBehaviour>().audioFile;
+            oilleakAudio.clip=collectable.GetComponent<OilBehaviour>().audioFile;
+            oilleakAudio.Play();
+           
+           fuelAudio.clip=collectable.GetComponent<FuelBehaviour>().audioFile;
+           fuelAudio.Play();
+
+           /*wrenchAudio.clip=collectable.GetComponent<wrenchBeahaviour>().audioFile;
            wrenchAudio.Play();*/
+
+
         }
         
         Debug.Log("Player collided with: " + collision.collider.name);
