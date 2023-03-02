@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
-    
+    // Audio source for the sprites - 
     public AudioSource busAudio;
     public AudioSource hilkAudio;
     //Get a reference to the Text UI
@@ -32,11 +32,11 @@ public class PlayerInventory : MonoBehaviour
 
             Destroy(collectable);
 
-           //busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
-            //busAudio.Play();
+           busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
+            busAudio.Play();
            
-           //hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
-           //busAudio.Play();
+           hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
+           hilkAudio.Play();
             
         }
         

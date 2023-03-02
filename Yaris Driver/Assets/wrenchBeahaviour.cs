@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class wrenchBeahaviour : MonoBehaviour
 {
+     // accesing the audio stored in sprites sfx
+     public AudioClip audioFile;
     // Start is called before the first frame update
     void Start()
     {
