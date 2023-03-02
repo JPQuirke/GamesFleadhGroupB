@@ -12,16 +12,26 @@ public class SpawnObstacles : MonoBehaviour
     public float timeBetweenSpawn;
     private float spawnTime;
     // Start is called before the first frame update
+   
+
+    
+   
     
 
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > spawnTime)
-        {
-            Spawn();
-            spawnTime= Time.time + timeBetweenSpawn;
+         float randomNumber = Random.Range(0, 9);
+        if(Time.time/2 == 0){
+
+                if(Time.time > spawnTime)
+            {
+                Spawn();
+                spawnTime= randomNumber;
+            }
+
         }
+        
     }
 
     void Spawn()
