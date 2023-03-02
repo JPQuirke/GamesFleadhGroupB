@@ -8,6 +8,10 @@ public class PlayerInventory : MonoBehaviour
     // Audio source for the sprites - 
     public AudioSource busAudio;
     public AudioSource hilkAudio;
+   public AudioSource wrenchAudio;
+   public AudioSource coneAudio;
+   public AudioSource fuelAudio;
+   public AudioSource oilleakAudio;
     //Get a reference to the Text UI
     
 
@@ -38,6 +42,11 @@ public class PlayerInventory : MonoBehaviour
            hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
            hilkAudio.Play();
             
+          /*coneAudio.clip=collectable.GetComponent<ConeBehaviour>().audioFile;
+            coneAudio.Play();
+           
+           wrenchAudio.clip=collectable.GetComponent<wrenchBehaviour>().audioFile;
+           wrenchAudio.Play();*/
         }
         
         Debug.Log("Player collided with: " + collision.collider.name);
