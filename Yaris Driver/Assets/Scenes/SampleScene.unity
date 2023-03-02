@@ -6029,7 +6029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc70bb0503bc1ad4c8f1b17628d319ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFile: {fileID: 0}
+  audioFile: {fileID: 8300000, guid: 6c306a31aa9a8c349a8260d22f3e836d, type: 3}
 --- !u!114 &1427083635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6527,7 +6527,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 088e8a8b97404b643914c581287423c0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.48
+  m_Volume: 0.503
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6995,7 +6995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eaee35c25d4304c811b3c50085f057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFile: {fileID: 0}
+  audioFile: {fileID: 8300000, guid: eb2bec4f49248a64cac25422d49415ca, type: 3}
 --- !u!114 &1742947012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7535,7 +7535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50eaee35c25d4304c811b3c50085f057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFile: {fileID: 0}
+  audioFile: {fileID: 8300000, guid: eb2bec4f49248a64cac25422d49415ca, type: 3}
 --- !u!114 &1840514252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9836,7 +9836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc70bb0503bc1ad4c8f1b17628d319ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFile: {fileID: 0}
+  audioFile: {fileID: 8300000, guid: 6c306a31aa9a8c349a8260d22f3e836d, type: 3}
 --- !u!114 &2027649199
 MonoBehaviour:
   m_ObjectHideFlags: 0
