@@ -26,7 +26,7 @@ public class wrenchBeahaviour : MonoBehaviour
             
             Debug.Log("The player was healed");
 
-            audioFile.play
+            //audioFile.play
             //healthManager.Heal(5);
 
             Destroy(gameObject);
