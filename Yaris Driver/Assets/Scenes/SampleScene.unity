@@ -123,6 +123,70 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22447713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22447714}
+  - component: {fileID: 22447715}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &22447714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22447713}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.564972, y: 2.3096838, z: -0.2801403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1969312256}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22447715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22447713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pattern:
+  - obstacle_top: {fileID: 776465363}
+    obstacle_bottom: {fileID: 674643500}
+  - obstacle_top: {fileID: 2027649196}
+    obstacle_bottom: {fileID: 28795205}
+  - obstacle_top: {fileID: 1840514249}
+    obstacle_bottom: {fileID: 1114628902}
+  - obstacle_top: {fileID: 1132522473}
+    obstacle_bottom: {fileID: 1597049267}
+  - obstacle_top: {fileID: 536816159}
+    obstacle_bottom: {fileID: 1615853697}
+  - obstacle_top: {fileID: 281991872}
+    obstacle_bottom: {fileID: 1999339005}
 --- !u!1 &28795205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4840065319652621307, guid: 06a6438478343bc4ca60751e952c4764, type: 3}
@@ -1244,10 +1308,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 2133817716}
-    speed: 6
+    speed: 7
     timeBetween: 0
   - location: {fileID: 2011960804}
-    speed: 6
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!114 &281991874
@@ -1844,7 +1908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6694184169978537085, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7972359771293198461, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_Constraints
@@ -1884,7 +1948,7 @@ MonoBehaviour:
     speed: 3
     timeBetween: 0
   - location: {fileID: 2011960804}
-    speed: 3
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!114 &536816162
@@ -1912,7 +1976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1746356797}
-  speed: 3
+  speed: 7
 --- !u!1 &565580023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 582793386799500234, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 582793386799500235, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_Points.Array.size
@@ -2671,10 +2735,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 2133817716}
-    speed: 12
+    speed: 7
     timeBetween: 0
   - location: {fileID: 2011960804}
-    speed: 12
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!114 &776465365
@@ -3080,7 +3144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &856769862
 Transform:
   m_ObjectHideFlags: 0
@@ -4945,10 +5009,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 2133817716}
-    speed: 5
+    speed: 7
     timeBetween: 0
   - location: {fileID: 2011960804}
-    speed: 5
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!114 &1132522475
@@ -6300,10 +6364,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 348361975}
-    speed: 5
+    speed: 7
     timeBetween: 0
   - location: {fileID: 512962883}
-    speed: 5
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!4 &1608026531 stripped
@@ -6356,10 +6420,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 348361975}
-    speed: 3
+    speed: 7
     timeBetween: 0
   - location: {fileID: 512962883}
-    speed: 3
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!1 &1731306085
@@ -6541,10 +6605,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 348361975}
-    speed: 8
+    speed: 7
     timeBetween: 0
   - location: {fileID: 512962883}
-    speed: 8
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!1 &1746356797
@@ -6707,12 +6771,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 348361975}
-    speed: 12
+    speed: 7
     timeBetween: 0
   - location: {fileID: 512962883}
-    speed: 12
+    speed: 7
     timeBetween: 0
   speed: 0
+--- !u!114 &1764219788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674643500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba91b820fc3e5b4cbc687e60d9cc2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1800384556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7036,10 +7112,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 2133817716}
-    speed: 8
+    speed: 7
     timeBetween: 0
   - location: {fileID: 2011960804}
-    speed: 8
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!114 &1840514251
@@ -8840,12 +8916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1615853697}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 7
+  test: []
+  pattern: []
 --- !u!4 &1931365874
 Transform:
   m_ObjectHideFlags: 0
@@ -8873,12 +8945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 28795205}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 15
+  test: []
+  pattern: []
 --- !u!114 &1931365876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8891,12 +8959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 674643500}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 11
+  test: []
+  pattern: []
 --- !u!114 &1931365877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8909,12 +8973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1114628902}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 11
+  test: []
+  pattern: []
 --- !u!114 &1931365878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8927,12 +8987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1999339005}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 12
+  test: []
+  pattern: []
 --- !u!114 &1931365879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8945,12 +9001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1597049267}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 19
+  test: []
+  pattern: []
 --- !u!114 &1931365880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8963,12 +9015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 536816159}
-  maxX: 39
-  minX: 39
-  maxY: 2
-  minY: 2
-  timeBetweenSpawn: 7
+  test: []
+  pattern: []
 --- !u!114 &1931365881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8981,12 +9029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 776465363}
-  maxX: 39
-  minX: 39
-  maxY: 2
-  minY: 2
-  timeBetweenSpawn: 11
+  test: []
+  pattern: []
 --- !u!114 &1931365882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8999,12 +9043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 2027649196}
-  maxX: 39
-  minX: 39
-  maxY: 2
-  minY: 2
-  timeBetweenSpawn: 11
+  test: []
+  pattern: []
 --- !u!114 &1931365883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9017,12 +9057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1132522473}
-  maxX: 39
-  minX: 39
-  maxY: 2
-  minY: 2
-  timeBetweenSpawn: 19
+  test: []
+  pattern: []
 --- !u!114 &1931365884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9035,12 +9071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1840514249}
-  maxX: 39
-  minX: 39
-  maxY: 2
-  minY: 2
-  timeBetweenSpawn: 11
+  test: []
+  pattern: []
 --- !u!114 &1931365885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9053,12 +9085,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 281991872}
-  maxX: 39
-  minX: 39
-  maxY: -2
-  minY: -2
-  timeBetweenSpawn: 19
+  test: []
+  pattern: []
+--- !u!1 &1969312253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969312256}
+  - component: {fileID: 1969312255}
+  - component: {fileID: 1969312254}
+  m_Layer: 0
+  m_Name: GameManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1969312254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969312253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 5a5f185f1afb1624191243de3444129f, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1969312255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969312253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3d2d11b04c9ff4ea9fc67d5de9fcee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 2080888883}
+  isPaused: 0
+--- !u!4 &1969312256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969312253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 22447714}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1999339005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5788418659292778308, guid: b5dc7f9cc37e36a46a8561c8a19764a9, type: 3}
@@ -9104,10 +9210,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pattern:
   - location: {fileID: 348361975}
-    speed: 6
+    speed: 7
     timeBetween: 0
   - location: {fileID: 512962883}
-    speed: 6
+    speed: 7
     timeBetween: 0
   speed: 0
 --- !u!1 &2011960804
@@ -9630,7 +9736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 582793386799500234, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 582793386799500235, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 582793386799500235, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_Points.Array.size
@@ -10461,7 +10571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6694184169978537085, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7972359771293198461, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_Constraints
