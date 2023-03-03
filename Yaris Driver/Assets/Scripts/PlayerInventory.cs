@@ -30,32 +30,76 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag =="Obstacle" || collision.collider.tag == "Item" ||  collision.collider.tag == "Wrench" || collision.collider.tag == "Fuel" );
+        if(collision.collider.tag =="Crash")
         {
             GameObject collectable = collision.gameObject;
 
             Destroy(collectable);
 
            busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
-            busAudio.Play();
+           busAudio.Play();
            
-           hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
-           hilkAudio.Play(); 
             
+        }
+
+        if(collision.collider.tag =="Cone")
+        {
+            GameObject collectable = collision.gameObject;
+
+            Destroy(collectable);
+
             coneAudio.clip=collectable.GetComponent<ConeBehaviour>().audioFile;
             coneAudio.Play();
            
-            oilleakAudio.clip=collectable.GetComponent<OilBehaviour>().audioFile;
+        
+        }
+
+        if(collision.collider.tag =="Oil")
+        {
+            GameObject collectable = collision.gameObject;
+
+            Destroy(collectable);
+        oilleakAudio.clip=collectable.GetComponent<OilBehaviour>().audioFile;
             oilleakAudio.Play();
-           
-           fuelAudio.clip=collectable.GetComponent<FuelBehaviour>().audioFile;
-           fuelAudio.Play();
+        }
+
+        if( collision.collider.tag == "Item" )
+        {
+            GameObject collectable = collision.gameObject;
+
+            Destroy(collectable);
+
+           hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
+           hilkAudio.Play(); 
+        }
+
+        
+        if(   collision.collider.tag == "Wrench"  )
+        {
+            GameObject collectable = collision.gameObject;
+
+            Destroy(collectable);
 
            wrenchAudio.clip=collectable.GetComponent<wrenchBeahaviour>().audioFile;
            wrenchAudio.Play();
 
 
         }
+
+        if(   collision.collider.tag == "Fuel"  )
+        {
+            GameObject collectable = collision.gameObject;
+
+            Destroy(collectable);
+
+           fuelAudio.clip=collectable.GetComponent<FuelBehaviour>().audioFile;
+           fuelAudio.Play();
+
+           
+
+        }
+
+        
         
         Debug.Log("Player collided with: " + collision.collider.name);
     }

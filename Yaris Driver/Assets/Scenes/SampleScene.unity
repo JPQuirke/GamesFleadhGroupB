@@ -386,10 +386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -448,6 +448,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &48490231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3718090871152453722, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+  m_PrefabInstance: {fileID: 1948914445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &48490235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48490231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f69b000cd77a9a4dbb1cd6e2d3f4768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splash: {fileID: 1752206858}
+  splashed: 0
+  time: 6
 --- !u!1001 &78879443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,11 +558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4649108824372017737, guid: 98a4518f57b5a1341bd14c1a360fafae, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 682
+      value: 816
       objectReference: {fileID: 0}
     - target: {fileID: 4649108824372017737, guid: 98a4518f57b5a1341bd14c1a360fafae, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 467.6
+      value: 459
       objectReference: {fileID: 0}
     - target: {fileID: 4649108824372017737, guid: 98a4518f57b5a1341bd14c1a360fafae, type: 3}
       propertyPath: m_LocalScale.x
@@ -650,11 +670,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360450, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 682
+      value: 816
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360450, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 467.6
+      value: 459
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360450, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_LocalScale.x
@@ -1687,11 +1707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360450, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 682
+      value: 816
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360450, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 467.6
+      value: 459
       objectReference: {fileID: 0}
     - target: {fileID: 6100667443260360450, guid: 986c6592a3d504e43aeef993b3e71080, type: 3}
       propertyPath: m_LocalScale.x
@@ -2007,7 +2027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6694184169978537085, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Oil
       objectReference: {fileID: 0}
     - target: {fileID: 7972359771293198461, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_Constraints
@@ -2063,7 +2083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioFile: {fileID: 8300000, guid: f4979558d122ffe41a312da5d6a9db6d, type: 3}
-  oilSplash: {fileID: 0}
+  oilSplash: {fileID: 48490235}
 --- !u!114 &536816163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,7 +2827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618989544825142996, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Crash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -5081,7 +5101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9128259847192379157, guid: 67ba55ec7db3327409fc6c84a5cd0d66, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -5594,7 +5614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1388158934
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6835,7 +6855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioFile: {fileID: 8300000, guid: f4979558d122ffe41a312da5d6a9db6d, type: 3}
-  oilSplash: {fileID: 0}
+  oilSplash: {fileID: 48490235}
 --- !u!114 &1615853706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7156,6 +7176,11 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 0.99999994}
   m_Direction: 0
+--- !u!1 &1752206858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9158911331950608219, guid: 43b742236fb40d34eb454ba3a0be9002, type: 3}
+  m_PrefabInstance: {fileID: 2016629373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1764219772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3848893815103795578, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
@@ -9909,7 +9934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7cd54fc7ec5d447984abbb26a9bc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioFile: {fileID: 0}
+  audioFile: {fileID: 8300000, guid: 36128003889b38244be3d8ca58c14281, type: 3}
 --- !u!114 &1999339017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10188,7 +10213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4840065319652621307, guid: 06a6438478343bc4ca60751e952c4764, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Cone
       objectReference: {fileID: 0}
     - target: {fileID: 8704693665821877178, guid: 06a6438478343bc4ca60751e952c4764, type: 3}
       propertyPath: m_Constraints
@@ -10851,7 +10876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618989544825142996, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Crash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -11315,7 +11340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4840065319652621307, guid: 06a6438478343bc4ca60751e952c4764, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Cone
       objectReference: {fileID: 0}
     - target: {fileID: 8704693665821877178, guid: 06a6438478343bc4ca60751e952c4764, type: 3}
       propertyPath: m_Constraints
@@ -11390,7 +11415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6694184169978537085, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Oil
       objectReference: {fileID: 0}
     - target: {fileID: 7972359771293198461, guid: e5dc23dce05e7d649ad87feeb7c22596, type: 3}
       propertyPath: m_Constraints

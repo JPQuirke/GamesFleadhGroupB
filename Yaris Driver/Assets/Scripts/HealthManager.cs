@@ -39,7 +39,7 @@ public class HealthManager : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag =="Collectables" || collision.collider.tag =="Obstacle")
+        if(collision.collider.tag =="Collectables" || collision.collider.tag =="Crash")
         {
                  health -= 1;
                 if (health == 2){

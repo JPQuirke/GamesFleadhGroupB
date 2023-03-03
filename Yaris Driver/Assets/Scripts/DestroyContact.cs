@@ -25,7 +25,7 @@ public class DestroyContact : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.tag =="Obstacle")
+        if(collision.collider.tag =="Crash")
         {
             GameObject collectable = collision.gameObject;
 
