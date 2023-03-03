@@ -1,0 +1,328 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.2f1 (9427c1534183) revision 9709505'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Enterprise' Language: 'en' Physical Memory: 15761 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/A00293393/Documents/GitHub/GamesFleadhGroupB/Yaris Driver
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+50592
+Successfully changed project path to: C:/Users/A00293393/Documents/GitHub/GamesFleadhGroupB/Yaris Driver
+C:/Users/A00293393/Documents/GitHub/GamesFleadhGroupB/Yaris Driver
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 124.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.2f1 (9427c1534183)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/A00293393/Documents/GitHub/GamesFleadhGroupB/Yaris Driver/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     7880 MB
+    Driver:   31.0.101.3959
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005674 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 116.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.881 seconds
+Domain Reload Profiling:
+	ReloadAssembly (881ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (648ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+				TypeCache.Initialize (153ms)
+					TypeCache.ScanAssembly (150ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (10ms)
+				RefreshPlugins (117ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008468 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\A00293393\Documents\GitHub\GamesFleadhGroupB\Yaris Driver\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\A00293393\Documents\GitHub\GamesFleadhGroupB\Yaris Driver\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 109.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.660 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1661ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1348ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (367ms)
+				TypeCache.Initialize (361ms)
+					TypeCache.ScanAssembly (355ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (694ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (110ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (402ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4459 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (57.5 KB). Loaded Objects now: 4918.
+Memory consumption went from 0.68 GB to 0.68 GB.
+Total: 5.120200 ms (FindLiveObjects: 0.485700 ms CreateObjectMapping: 0.378200 ms MarkObjects: 4.124300 ms  DeleteObjects: 0.125200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 390535.040985 seconds.
+  path: Assets/Sound FX/Player Heartbeat Sound Effect (128 kbps).mp3
+  artifactKey: Guid(e15273890221f0d4b9713545136f0296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/Player Heartbeat Sound Effect (128 kbps).mp3 using Guid(e15273890221f0d4b9713545136f0296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f59017e1de3530588d72c1fc1b30dd3') in 0.151759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sound FX/Glass Bottle Break Sound effect (128 kbps).mp3
+  artifactKey: Guid(3d01e8a8969cb8648a199ca5842a8fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/Glass Bottle Break Sound effect (128 kbps).mp3 using Guid(3d01e8a8969cb8648a199ca5842a8fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaceb8e9845f39dc8cb3bcd2610528d') in 0.023331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sound FX/ELECTRIC DRILL SOUND IN HIGH QUALITY.mp3
+  artifactKey: Guid(966e2d4434b86f546b2fc39853381cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/ELECTRIC DRILL SOUND IN HIGH QUALITY.mp3 using Guid(966e2d4434b86f546b2fc39853381cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07ee82bc6ad15ec9357e01a274a363c') in 0.019739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Radio Songs/12-long.flac
+  artifactKey: Guid(1156e91a9ccd3b1409e165585ec8384c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/12-long.flac using Guid(1156e91a9ccd3b1409e165585ec8384c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd65407d922e91723f36dbc967e53ef') in 0.025523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Radio Songs/6-long.flac
+  artifactKey: Guid(bc7f3637c45e13d45af916a0f855dddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/6-long.flac using Guid(bc7f3637c45e13d45af916a0f855dddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a9b26d412c3109d9fc0253ba644bae') in 0.022893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sound FX/Falling Off Bike On Gravel Sound Effect.mp3
+  artifactKey: Guid(87d84d0e57c200746af37f7d85c0e5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/Falling Off Bike On Gravel Sound Effect.mp3 using Guid(87d84d0e57c200746af37f7d85c0e5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c3d535ea06a00cce57b98dc06a71c4') in 0.022128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sound FX/fuel fix.mp3
+  artifactKey: Guid(eb2bec4f49248a64cac25422d49415ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/fuel fix.mp3 using Guid(eb2bec4f49248a64cac25422d49415ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517c361c9aa74660422922dd4bb6d226') in 0.024368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sound FX/Ratchet fix.mp3
+  artifactKey: Guid(36128003889b38244be3d8ca58c14281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/Ratchet fix.mp3 using Guid(36128003889b38244be3d8ca58c14281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76da71847040c5d6c0c6465c169cf11e') in 0.021563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sound FX/crash fix.mp3
+  artifactKey: Guid(2c6150a7dc4a85d489e068f23053a88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound FX/crash fix.mp3 using Guid(2c6150a7dc4a85d489e068f23053a88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed29c04f1b26e0b7f1aabdaafec63cbf') in 0.020778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.488165 seconds.
+  path: Assets/Radio Songs/Nihilore - Broken Parts - 06 Bush Week.mp3
+  artifactKey: Guid(c20a94582d3ef5b40be22ae8eaabbe16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Nihilore - Broken Parts - 06 Bush Week.mp3 using Guid(c20a94582d3ef5b40be22ae8eaabbe16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19532ffe9a9b52dada912e047c43f524') in 0.038157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.361235 seconds.
+  path: Assets/Radio Songs/Nihilore - Broken Parts - 03 Democide.mp3
+  artifactKey: Guid(86060178d3c7d684e9b1458cd1c6187a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Nihilore - Broken Parts - 03 Democide.mp3 using Guid(86060178d3c7d684e9b1458cd1c6187a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50fd99c55bbb9827fc12de2a311ac387') in 0.045378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.300380 seconds.
+  path: Assets/Radio Songs/Nihilore - The Hermeneutic Circle - 05 A Different World By Night.mp3
+  artifactKey: Guid(4928982b007580b41a3e1420eae98e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Nihilore - The Hermeneutic Circle - 05 A Different World By Night.mp3 using Guid(4928982b007580b41a3e1420eae98e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b29a0e2aae8dd88f4fb43e3c7c28cb7') in 0.028590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.959315 seconds.
+  path: Assets/Radio Songs/Nihilore - The Hermeneutic Circle - 07 Laconic.mp3
+  artifactKey: Guid(58c04d5e3b0ca064fa9ef661f1a675a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Nihilore - The Hermeneutic Circle - 07 Laconic.mp3 using Guid(58c04d5e3b0ca064fa9ef661f1a675a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ea0c965eb4d6cb8a9e5417a4e57e0b') in 0.025539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.402175 seconds.
+  path: Assets/Radio Songs/Nihilore - Truth and Justification - 07 A Tremendous Thing.mp3
+  artifactKey: Guid(f277dd07a2c4ea349b3feb725773f6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Nihilore - Truth and Justification - 07 A Tremendous Thing.mp3 using Guid(f277dd07a2c4ea349b3feb725773f6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168bb21c538be5a1f0bcf378cbf43423') in 0.795725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.732710 seconds.
+  path: Assets/Radio Songs/Pokki_DJ_-_No_Prayers.mp3
+  artifactKey: Guid(69d67f6f6054bdd4db3011c92560b997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Pokki_DJ_-_No_Prayers.mp3 using Guid(69d67f6f6054bdd4db3011c92560b997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13e5d3ec4afd9f286f67e4228bd9bc39') in 0.038547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.280804 seconds.
+  path: Assets/Radio Songs/Sunwill_-_Queen_for_a_day.mp3
+  artifactKey: Guid(c163591879a53824a8b3301469101597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/Sunwill_-_Queen_for_a_day.mp3 using Guid(c163591879a53824a8b3301469101597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b3f618ce80292e8100f96b69e09cba') in 0.032886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.440089 seconds.
+  path: Assets/Radio Songs/You_re in the Future.ogg
+  artifactKey: Guid(9850851acb06aa344811c1c4fd482c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Radio Songs/You_re in the Future.ogg using Guid(9850851acb06aa344811c1c4fd482c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecab8aabd43b6c352dbdcd8637e705e3') in 0.040117 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005863 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\A00293393\Documents\GitHub\GamesFleadhGroupB\Yaris Driver\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\A00293393\Documents\GitHub\GamesFleadhGroupB\Yaris Driver\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.905 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1906ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1586ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (481ms)
+				TypeCache.Initialize (472ms)
+					TypeCache.ScanAssembly (453ms)
+				ResolveRequiredComponents (10ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (726ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (11ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (493ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4435 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (25.4 KB). Loaded Objects now: 4930.
+Memory consumption went from 0.68 GB to 0.68 GB.
+Total: 6.675600 ms (FindLiveObjects: 0.732100 ms CreateObjectMapping: 0.402600 ms MarkObjects: 5.435500 ms  DeleteObjects: 0.101400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
