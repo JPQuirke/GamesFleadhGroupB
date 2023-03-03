@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HIlkBehaviour : MonoBehaviour
 {
-
-     public AudioClip audioFile;
+    
+    public AudioClip  audioFile;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class HIlkBehaviour : MonoBehaviour
             Debug.Log("The Player Is Drunk");
 
 
-            
+           
 
             Destroy(gameObject);
         }
