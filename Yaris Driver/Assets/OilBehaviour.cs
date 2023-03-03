@@ -5,10 +5,11 @@ using UnityEngine;
 public class OilBehaviour : MonoBehaviour
 {
     public AudioClip audioFile;
+     public OilSplash oilSplash;
     // Start is called before the first frame update
     void Start()
     {
-        
+         OilSplash oilSplash = gameObject.GetComponent<OilSplash>();
     }
 
     // Update is called once per frame
@@ -21,7 +22,8 @@ public class OilBehaviour : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            
+              oilSplash.isSplashed();
+
             Destroy(gameObject);
         }
 
@@ -31,5 +33,5 @@ public class OilBehaviour : MonoBehaviour
         }
     }
 
-    //add spinning feature
+
 }
