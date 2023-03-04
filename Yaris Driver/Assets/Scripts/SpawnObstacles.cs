@@ -20,6 +20,8 @@ public class SpawnObstacles : MonoBehaviour
 
     public float spawnRate = 10.0f;
     private float nextSpawn = 0.0f;
+
+    
   
     // used to declare the amount of score that is increased per seconed
 
