@@ -59,6 +59,7 @@ public class PlayerInventory : MonoBehaviour
             GameObject collectable = collision.gameObject;
 
             Destroy(collectable);
+        
         oilleakAudio.clip=collectable.GetComponent<OilBehaviour>().audioFile;
             oilleakAudio.Play();
         }
