@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConeBehaviour : MonoBehaviour
 {
-    //Reference for the Coneaudio in PlayerInventory
+    //Reference for the ConeAudio in PlayerInventory
     public AudioClip audioFile;
 
     public void OnCollisionEnter2D(Collision2D collision)
