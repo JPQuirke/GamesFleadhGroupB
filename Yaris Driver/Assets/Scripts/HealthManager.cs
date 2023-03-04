@@ -6,13 +6,15 @@ using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
-        int health = 3;
+    // value for health
+     int health = 3;
+    // images used for the health display
     public TextMeshProUGUI Health1;
     public TextMeshProUGUI Health2;
     public TextMeshProUGUI Health3;
-
+    // references the defeat menu panel
     public defeatMenu defeatMenu;
-
+    // the value the wrench can repair
    public int repair = 1;
 
 
@@ -22,15 +24,17 @@ public class HealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // links the defeat screen script to the health script
         defeatMenu defeatMenu = gameObject.GetComponent<defeatMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // if health is less then 1 then it will trigger defeat menu
         if (health  <1)
         {
-             
+             // calls on defeat method from the defeat script
             defeatMenu.OnDefeat();
         } 
 
@@ -42,6 +46,7 @@ public class HealthManager : MonoBehaviour
         if(collision.collider.tag =="Collectables" || collision.collider.tag =="Crash" || collision.collider.tag == "Cone")
         {
                  health -= 1;
+            // disables car sprites to visualise how many lives are left
                 if (health == 2){
                   Health1.enabled = false;
                 }
@@ -59,13 +64,19 @@ public class HealthManager : MonoBehaviour
         }
         else if(collision.collider.tag=="Wrench")
         {
-            health +=1;
+            // enables car car sprites to visualise how many lives are left when car repairs
+            health += 1;
             if (health == 2){
                   Health2.enabled = true;
                 }
                 if (health == 3){
                  Health1.enabled = true;
                 }
+        // prevents car lives exceeding 3
+            if (health == 4)
+            {
+                health -=1;
+            }
                 
                    
         }
