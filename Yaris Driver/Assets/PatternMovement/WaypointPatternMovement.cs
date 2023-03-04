@@ -14,7 +14,7 @@ public class WaypointPatternMovement : MonoBehaviour
      
    }
     // int for chase range
-    int chaseRange =120;
+   public int chaseRange =120;
     public WaypointData[] pattern;
 
     private int patternIndex = 0;
