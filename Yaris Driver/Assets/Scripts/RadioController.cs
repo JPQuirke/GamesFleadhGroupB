@@ -29,7 +29,7 @@ public class RadioController : MonoBehaviour
         }
     }
 
-    void On2() // Function to handle if the 2 key is pressed
+    void OnF() // Function to handle if the 2 key is pressed
     {
         currentClipIndex = (currentClipIndex + 1) % audioClips.Length; // Increment by 1 the index and wrap around if necessary
         audioSource.clip = audioClips[currentClipIndex]; // Set the clip to the new audio clip
@@ -37,7 +37,7 @@ public class RadioController : MonoBehaviour
         Debug.Log("Sound is playing"); // Give a printed confirmation that sound is playing
     }
 
-    void On1() // Function to handle if the 1 key is press
+    void OnG() // Function to handle if the 1 key is press
     {
         currentClipIndex--; // Decrement the index by -1
         if (currentClipIndex < 0) // If the index is less than zero
