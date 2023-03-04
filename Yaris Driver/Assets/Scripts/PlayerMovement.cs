@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
    
 
-    float smooth = 50.0f;
+    //float smooth = 50.0f;
     
     
     //Access the Player Sprite Renderer
@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         movement = movePosition.Get<Vector2>();
     }
 
-    void OnDown()
+    /*void OnDown()
     {
             // Smoothly tilts a transform towards a target rotation.
      
@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Dampen towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, target,  Time.deltaTime * smooth);
-    }
+    }*/
 
     
 
