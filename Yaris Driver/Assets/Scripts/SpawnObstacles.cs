@@ -76,24 +76,6 @@ public class SpawnObstacles : MonoBehaviour
                   
             }
 
-               if(Time.time > nextSpawn)
-            {
-
-                
-
-                index2 = Random.Range (0, obstacle_bottom.Length);
-                bottomob = obstacle_bottom[index];
-                
-             
-                Instantiate(bottomob, transform.position + new Vector3(29, -2, 0), transform.rotation);
-                //scoreTotal += scoreIncreasePerSecond * Time.deltaTime;
-            
-                
-                Debug.Log("Item spawned");
-              nextSpawn = Time.time + spawnRate;
-                  
-                  
-            }
             
 
         

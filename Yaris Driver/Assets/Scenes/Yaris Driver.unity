@@ -467,6 +467,11 @@ MonoBehaviour:
   splash: {fileID: 1752206858}
   splashed: 0
   time: 6
+--- !u!4 &48490238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+  m_PrefabInstance: {fileID: 1948914445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &53322943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,6 +1863,270 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1746356797}
   speed: 6
+--- !u!1 &282361957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282361958}
+  - component: {fileID: 282361959}
+  m_Layer: 0
+  m_Name: SpawnPoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &282361958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282361957}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.564972, y: 2.3096838, z: -0.2801403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 48490238}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &282361959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282361957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle_top:
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 2027649196}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 1132522473}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 281991872}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  obstacle_bottom:
+  - {fileID: 28795205}
+  - {fileID: 1615853697}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2115595733}
+  - {fileID: 674643500}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1999339005}
+  - {fileID: 2115595733}
+  - {fileID: 1251246692}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1597049267}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  spawnRate: 2
+--- !u!1 &302150099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302150100}
+  - component: {fileID: 302150101}
+  m_Layer: 0
+  m_Name: SpawnPoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &302150100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302150099}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.564972, y: 2.3096838, z: -0.2801403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 48490238}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &302150101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302150099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle_top:
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 2027649196}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 1132522473}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 281991872}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  obstacle_bottom:
+  - {fileID: 28795205}
+  - {fileID: 1615853697}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2115595733}
+  - {fileID: 674643500}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1999339005}
+  - {fileID: 2115595733}
+  - {fileID: 1251246692}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1597049267}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  spawnRate: 2
 --- !u!1 &325517039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,7 +2640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348361975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39, y: -2, z: 0}
+  m_LocalPosition: {x: 53.82, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2386,7 +2655,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348361975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0621ba00b3583d740b313dc2a7e2c1df, type: 2}
   m_CullingMode: 0
@@ -3915,6 +4184,138 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8618989544825142996, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
   m_PrefabInstance: {fileID: 582793386012781025}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &705462204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705462205}
+  - component: {fileID: 705462206}
+  m_Layer: 0
+  m_Name: SpawnPoint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &705462205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705462204}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.564972, y: 2.3096838, z: -0.2801403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 48490238}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705462206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705462204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle_top:
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 2027649196}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 1132522473}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 281991872}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  obstacle_bottom:
+  - {fileID: 28795205}
+  - {fileID: 1615853697}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2115595733}
+  - {fileID: 674643500}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1999339005}
+  - {fileID: 2115595733}
+  - {fileID: 1251246692}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1597049267}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  spawnRate: 2
 --- !u!1 &708901746
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,6 +7655,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989031549}
   m_CullTransparentMesh: 1
+--- !u!1 &999505532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3718090871487201222, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+  m_PrefabInstance: {fileID: 1948914445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1001877244
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,6 +9360,122 @@ MonoBehaviour:
     speed: 7
   speed: 0
   timeBetween: 100
+--- !u!1 &1442884115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442884116}
+  - component: {fileID: 1442884117}
+  m_Layer: 0
+  m_Name: SpawnPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442884116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442884115}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.564972, y: 2.3096838, z: -0.2801403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 48490238}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442884117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442884115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle_top:
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1132522473}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 281991872}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 489461936}
+  - {fileID: 1558777471}
+  obstacle_bottom:
+  - {fileID: 28795205}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1999339005}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1597049267}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 2030914772}
+  - {fileID: 2115595733}
+  spawnRate: 2
 --- !u!1 &1444148626
 GameObject:
   m_ObjectHideFlags: 0
@@ -9340,6 +9862,12 @@ MonoBehaviour:
   scoreText: {fileID: 565580025}
   scoreTotal: 0
   scoreIncreasePerSecond: 1
+  spawner1: {fileID: 999505532}
+  spawner2: {fileID: 1442884115}
+  spawner3: {fileID: 1581780362}
+  spawner4: {fileID: 302150099}
+  spawner5: {fileID: 282361957}
+  spawner6: {fileID: 705462204}
 --- !u!114 &1495411665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10490,6 +11018,138 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1746356797}
   speed: 12
+--- !u!1 &1581780362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581780363}
+  - component: {fileID: 1581780364}
+  m_Layer: 0
+  m_Name: SpawnPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1581780363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581780362}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.564972, y: 2.3096838, z: -0.2801403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 48490238}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1581780364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581780362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf0266bc7625cc4b8a913865a0c2411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle_top:
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 2027649196}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 1132522473}
+  - {fileID: 1251246692}
+  - {fileID: 489461936}
+  - {fileID: 1251246692}
+  - {fileID: 776465363}
+  - {fileID: 1251246692}
+  - {fileID: 70366819}
+  - {fileID: 1251246692}
+  - {fileID: 1840514249}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 1558777471}
+  - {fileID: 1251246692}
+  - {fileID: 536816159}
+  - {fileID: 536816159}
+  - {fileID: 1251246692}
+  - {fileID: 281991872}
+  - {fileID: 1251246692}
+  - {fileID: 2027649196}
+  - {fileID: 1251246692}
+  obstacle_bottom:
+  - {fileID: 28795205}
+  - {fileID: 1615853697}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 28795205}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 2115595733}
+  - {fileID: 674643500}
+  - {fileID: 2030914772}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1999339005}
+  - {fileID: 2115595733}
+  - {fileID: 1251246692}
+  - {fileID: 1615853697}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1563645511}
+  - {fileID: 1597049267}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 1114628902}
+  - {fileID: 1251246692}
+  - {fileID: 1251246692}
+  - {fileID: 674643500}
+  - {fileID: 1251246692}
+  spawnRate: 2
 --- !u!1 &1597049267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9128259847192379157, guid: 67ba55ec7db3327409fc6c84a5cd0d66, type: 3}
@@ -13872,7 +14532,7 @@ PrefabInstance:
       objectReference: {fileID: 2080888883}
     - target: {fileID: 3718090871152453722, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: m_Name
-      value: GameManager (2)
+      value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: m_RootOrder
@@ -13924,11 +14584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_top.Array.size
-      value: 31
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_bottom.Array.size
-      value: 38
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_top.Array.data[0]
@@ -14054,6 +14714,18 @@ PrefabInstance:
       propertyPath: obstacle_top.Array.data[30]
       value: 
       objectReference: {fileID: 1251246692}
+    - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: obstacle_top.Array.data[31]
+      value: 
+      objectReference: {fileID: 70366819}
+    - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: obstacle_top.Array.data[32]
+      value: 
+      objectReference: {fileID: 489461936}
+    - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: obstacle_top.Array.data[33]
+      value: 
+      objectReference: {fileID: 1558777471}
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_bottom.Array.data[0]
       value: 
@@ -14206,8 +14878,39 @@ PrefabInstance:
       propertyPath: obstacle_bottom.Array.data[37]
       value: 
       objectReference: {fileID: 1251246692}
+    - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: obstacle_bottom.Array.data[38]
+      value: 
+      objectReference: {fileID: 1563645511}
+    - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: obstacle_bottom.Array.data[39]
+      value: 
+      objectReference: {fileID: 2030914772}
+    - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: obstacle_bottom.Array.data[40]
+      value: 
+      objectReference: {fileID: 2115595733}
+    - target: {fileID: 3718090871487201222, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1442884116}
+    - targetCorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1581780363}
+    - targetCorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302150100}
+    - targetCorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 282361958}
+    - targetCorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 705462205}
   m_SourcePrefab: {fileID: 100100000, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
 --- !u!1 &1999339005 stripped
 GameObject:
