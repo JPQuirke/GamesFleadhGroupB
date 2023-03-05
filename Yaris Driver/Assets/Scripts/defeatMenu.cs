@@ -47,7 +47,7 @@ public class defeatMenu : MonoBehaviour
     }
     public void PlayAgain()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Yaris Driver");
     }
 }
 
