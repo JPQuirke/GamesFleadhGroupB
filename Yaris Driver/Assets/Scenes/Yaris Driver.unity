@@ -857,7 +857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618989544825142996, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_Name
-      value: Dark Blue Car Top (1)
+      value: Red Car Top
       objectReference: {fileID: 0}
     - target: {fileID: 8618989544825142996, guid: 66aaa751288f10d4e938bdec2dd55b81, type: 3}
       propertyPath: m_TagString
