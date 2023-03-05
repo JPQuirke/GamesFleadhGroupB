@@ -15,7 +15,7 @@ public class OilBehaviour : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-              oilSplash.isSplashed();
+            oilSplash.isSplashed();
 
             Destroy(gameObject);
         }
