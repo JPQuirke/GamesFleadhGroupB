@@ -15,8 +15,8 @@ public class RadioController : MonoBehaviour
         audioSource.clip = audioClips[currentClipIndex]; // Set the clip to the first audio clip in the array
         audioSource.Play(); // Start playing the radio
 
-        // Set the initial song name in the Text object
-        songName.text = audioSource.clip.name;
+        // Set the initial song name in the Text object with prefix
+        songName.text = "Song Name: " + audioSource.clip.name;
     }
 
     void Update()
@@ -42,8 +42,8 @@ public class RadioController : MonoBehaviour
         audioSource.clip = audioClips[currentClipIndex];
         audioSource.Play();
 
-        // Set the new song name in the Text object
-        songName.text = audioSource.clip.name;
+        // Set the new song name in the Text object with prefix
+        songName.text = "Song Name: " + audioSource.clip.name;
     }
 
     void OnG() // If G Pressed
@@ -56,7 +56,7 @@ public class RadioController : MonoBehaviour
         audioSource.clip = audioClips[currentClipIndex];
         audioSource.Play();
 
-        // Set the new song name in the Text object
-        songName.text = audioSource.clip.name;
+        // Set the new song name in the Text object with prefix
+        songName.text = "Song Name: " + audioSource.clip.name;
     }
 }
