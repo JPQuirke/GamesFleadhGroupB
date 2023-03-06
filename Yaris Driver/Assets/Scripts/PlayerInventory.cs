@@ -72,6 +72,8 @@ public class PlayerInventory : MonoBehaviour
 
            hilkAudio.clip=collectable.GetComponent<HIlkBehaviour>().audioFile;
            hilkAudio.Play(); 
+
+           
         }
 
         
