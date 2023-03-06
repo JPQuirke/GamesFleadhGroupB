@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 345706219}
   - component: {fileID: 345706218}
   m_Layer: 0
-  m_Name: space-planet-pixel-art-pixelated-landscape-game-application-bit-video-game-space-planet-pixel-art-background-space-193279930
+  m_Name: space background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
