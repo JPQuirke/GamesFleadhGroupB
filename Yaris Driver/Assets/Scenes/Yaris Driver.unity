@@ -148,6 +148,7 @@ MonoBehaviour:
   splash: {fileID: 1752206858}
   splashed: 0
   time: 6
+  timeDecrease: 1
 --- !u!4 &48490238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3718090871152454567, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
@@ -1627,7 +1628,7 @@ SpriteRenderer:
   m_Size: {x: 1764.5858, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &345706220
@@ -13560,6 +13561,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 856769863}
+    - target: {fileID: 827605520053373027, guid: 8fe2487b42a5e1641aaf4b3e6057bbb2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6905656922972887365, guid: 8fe2487b42a5e1641aaf4b3e6057bbb2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -13568,6 +13573,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1495411669}
+    - target: {fileID: 8387606316190202512, guid: 8fe2487b42a5e1641aaf4b3e6057bbb2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fe2487b42a5e1641aaf4b3e6057bbb2, type: 3}

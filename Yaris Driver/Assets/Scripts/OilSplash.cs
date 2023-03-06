@@ -3,12 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OilSplash : MonoBehaviour
+
  
  
 {
+    // splash screen
     public GameObject splash;
+    // splash bool
     public bool splashed = false;
-     public float time;
+
+    // time
+    public float time;
+    // time decrease
+    public float timeDecrease;
+    
+   
     
 
 
@@ -22,29 +31,41 @@ public class OilSplash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-       
-          
+       // if splasehed starts a timer
+       if(splashed == true)
+       {
+          time -= timeDecrease *Time.deltaTime;
+       }
+        
+
+        // when timer is less then 0 it calls the endsplash method
+             if(time < 0)
+          {
+            EndSplash();
+
+          }
     }
     public void isSplashed()
     {
+        // resets time
+        time = 6;
+        // activates the splash screen
              splash.SetActive(true);
-             StartCoroutine(Splash(time));
-             EndSplash();
+        // sets the splash bool to true
+        splashed =true;
+             
     }
-    IEnumerator Splash(float waitTime)
-    {
-        splashed=true;
-        yield return new WaitForSeconds(waitTime);
-        splashed=false;
-    }
+
 
  
 
      public void EndSplash()
      {
+        // turns off the oil splash screen
         splash.SetActive(false);
-        splashed = true;
+        // puts the splash bool to false
+        splashed =false;
+        
      }
 
 
