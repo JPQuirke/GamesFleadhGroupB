@@ -1,50 +1,62 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RadioController : MonoBehaviour
 {
     public AudioSource audioSource; // The component used to play audio
-    public AudioClip[] audioClips; // An array of audio clips to play from
+    public AudioClip[] audioClips;
+    public Text songName; // Reference to the Text object for the song name
     private int currentClipIndex = 0; // The index of the currently playing song
 
     void Start()
     {
         audioSource.clip = audioClips[currentClipIndex]; // Set the clip to the first audio clip in the array
         audioSource.Play(); // Start playing the radio
+
+        // Set the initial song name in the Text object
+        songName.text = audioSource.clip.name;
     }
 
     void Update()
     {
-     
+        
     }
 
-    void OnSpace() // Function to handle the space key press
+    void OnSpace() 
     {
-        if (audioSource.isPlaying) // If the audio is playing
+        if (audioSource.isPlaying) // Check if audio playing
         {
             audioSource.Pause(); // Pause the audio
         }
         else
         {
-            audioSource.Play(); // Otherwise, play the audio
+            audioSource.Play(); // Play Audio
         }
     }
 
-    void OnF() // Function to handle if the 2 key is pressed
+    void OnF() // Checks if key pressed
     {
-        currentClipIndex = (currentClipIndex + 1) % audioClips.Length; // Increment by 1 the index and wrap around if necessary
-        audioSource.clip = audioClips[currentClipIndex]; // Set the clip to the new audio clip
-        audioSource.Play(); // Play the new audio clip
-        Debug.Log("Sound is playing"); // Give a printed confirmation that sound is playing
+        currentClipIndex = (currentClipIndex + 1) % audioClips.Length;
+        audioSource.clip = audioClips[currentClipIndex];
+        audioSource.Play();
+
+        // Set the new song name in the Text object
+        songName.text = audioSource.clip.name;
     }
 
-    void OnG() // Function to handle if the 1 key is press
+    void OnG() // If G Pressed
     {
-        currentClipIndex--; // Decrement the index by -1
-        if (currentClipIndex < 0) // If the index is less than zero
+        currentClipIndex--;
+        if (currentClipIndex < 0)
         {
-            currentClipIndex = audioClips.Length - 1; // Wrap around to the end of the array
+            currentClipIndex = audioClips.Length - 1;
         }
-        audioSource.clip = audioClips[currentClipIndex]; // Set the clip to the new audio clip
-        audioSource.Play(); // Play the new audio clip
+        audioSource.clip = audioClips[currentClipIndex];
+        audioSource.Play();
+
+        // Set the new song name in the Text object
+        songName.text = audioSource.clip.name;
     }
 }
