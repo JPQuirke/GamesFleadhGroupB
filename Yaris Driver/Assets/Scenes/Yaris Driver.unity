@@ -9535,7 +9535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuelText: {fileID: 224588998}
-  fuelDecreasePerSecond: 25
+  fuelDecreasePerSecond: 1
   noFuel: {fileID: 6100667443958255554}
   hasFuel: 0
 --- !u!114 &1495411667
