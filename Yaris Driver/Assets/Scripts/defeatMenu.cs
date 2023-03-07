@@ -7,9 +7,12 @@ public class defeatMenu : MonoBehaviour
     public GameObject defeat;
 
     public bool isDefeated;
+
+    public GameObject oilSplash;
     // Start is called before the first frame update
     void Start()
     {
+      
         defeat.SetActive(false);
     }
 
@@ -25,6 +28,8 @@ public class defeatMenu : MonoBehaviour
         //if player is dead send to EndGame() class
           if (isDefeated == false) {
                 EndGame();
+                oilSplash.SetActive(false);
+                
             }
           
     }

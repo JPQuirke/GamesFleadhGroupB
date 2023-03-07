@@ -9535,7 +9535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuelText: {fileID: 224588998}
-  fuelDecreasePerSecond: 1
+  fuelDecreasePerSecond: 25
   noFuel: {fileID: 6100667443958255554}
   hasFuel: 0
 --- !u!114 &1495411667
@@ -9586,6 +9586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defeat: {fileID: 1388158933}
   isDefeated: 0
+  oilSplash: {fileID: 9158911333423672614}
 --- !u!82 &1495411670
 AudioSource:
   m_ObjectHideFlags: 0
