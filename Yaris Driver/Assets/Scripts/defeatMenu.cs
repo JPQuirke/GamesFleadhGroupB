@@ -59,6 +59,8 @@ public class defeatMenu : MonoBehaviour
 //plays game when button is pressed    
     public void PlayAgain()
     {
+        //unfreezez the game
+        Time.timeScale = 1f;
         //loads the scene
         SceneManager.LoadScene("Yaris Driver");
     }
