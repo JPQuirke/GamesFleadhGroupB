@@ -21,24 +21,18 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
-    // Update is called once per frame
+    
     public void OnPause()
     {
         
         
             //if game is not paused, pause it 
             if (isPaused == false) {
-                
-              
-                
                 //pauses game
                 PauseGame();
             }
             //if game is paused then unpause it
             else{
-                
-                 
-                
                 //resumes game
                 ResumeGame();
             }
@@ -47,36 +41,40 @@ public class PauseMenu : MonoBehaviour
 
 //pauses game when the ESCAPE button is pressed
     public void PauseGame(){
+
+        //turns on pause menu
+        pauseMenu.SetActive(true);
+        //freezes time
+        Time.timeScale = 0f;
+        //sets bool to true
+        isPaused = true;
         //disables sounds
          
          obstaclesSound.enabled=false;
          engineSound.enabled=false;
          collectablesSound.enabled=false;
          radioSound.enabled=false;
-//turns on pause menu
-        pauseMenu.SetActive(true);
-        //freezes time
-        Time.timeScale = 0f;
-        //sets bool to true
-        isPaused = true;
+
     }
 
 
 //resumes game when button pressed
     public void ResumeGame()
     {
-        //enables sounds
-    obstaclesSound.enabled=true;
-    engineSound.enabled=true;
-    collectablesSound.enabled=true;
-    radioSound.enabled=true;
-
         //turns off pause menu
         pauseMenu.SetActive(false);
         //unfreezes time
         Time.timeScale = 1f;
        //sets bool to false
         isPaused = false;
+        
+        //enables sounds
+    obstaclesSound.enabled=true;
+    engineSound.enabled=true;
+    collectablesSound.enabled=true;
+    radioSound.enabled=true;
+
+        
     }
 
 //brings player back to the main menu
