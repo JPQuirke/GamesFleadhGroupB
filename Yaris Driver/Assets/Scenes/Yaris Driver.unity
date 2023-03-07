@@ -3396,12 +3396,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 90baeaf2e0cc47b429bd5946331e0952, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 9601517079cd0ee459c6f03f73de1050, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -7549,6 +7549,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioFile: {fileID: 8300000, guid: 134211e6f63ddc1409761368b37cdc4b, type: 3}
+  mainCamera: {fileID: 519420028}
+  timeDelay: 2
+  DrunkJoshie: 0
+  ppv: {fileID: 519420034}
 --- !u!1 &1137459709
 GameObject:
   m_ObjectHideFlags: 0
@@ -10613,6 +10617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioFile: {fileID: 8300000, guid: 134211e6f63ddc1409761368b37cdc4b, type: 3}
+  mainCamera: {fileID: 519420028}
+  timeDelay: 2
+  DrunkJoshie: 0
+  ppv: {fileID: 519420034}
 --- !u!114 &1597049280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14051,7 +14059,7 @@ PrefabInstance:
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_top.Array.data[4]
       value: 
-      objectReference: {fileID: 1251246692}
+      objectReference: {fileID: 1132522473}
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_top.Array.data[5]
       value: 
@@ -14095,7 +14103,7 @@ PrefabInstance:
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_top.Array.data[15]
       value: 
-      objectReference: {fileID: 1251246692}
+      objectReference: {fileID: 1132522473}
     - target: {fileID: 3718090871487201220, guid: 5bef6ba5719b0fa4881b682eb012f3bc, type: 3}
       propertyPath: obstacle_top.Array.data[16]
       value: 
