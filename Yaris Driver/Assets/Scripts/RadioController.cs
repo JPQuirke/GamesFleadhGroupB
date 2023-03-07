@@ -36,7 +36,7 @@ public class RadioController : MonoBehaviour
         }
     }
 
-    void OnF() // Checks if key pressed
+    void OnF() //when pressed changes to the previous song.
     {
         currentClipIndex = (currentClipIndex + 1) % audioClips.Length;
         audioSource.clip = audioClips[currentClipIndex];
@@ -46,7 +46,7 @@ public class RadioController : MonoBehaviour
         songName.text = "Song Name: " + audioSource.clip.name;
     }
 
-    void OnG() // If G Pressed
+    void OnG() //when pressed changes to the next song.
     {
         currentClipIndex--;
         if (currentClipIndex < 0)

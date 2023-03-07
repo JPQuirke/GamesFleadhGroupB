@@ -30,12 +30,13 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if(collision.collider.tag =="Crash")
         {
             GameObject collectable = collision.gameObject;
-
+            
             Destroy(collectable);
-
+            
            busAudio.clip=collectable.GetComponent<busBehaviour>().audioFile;
            busAudio.Play();
            

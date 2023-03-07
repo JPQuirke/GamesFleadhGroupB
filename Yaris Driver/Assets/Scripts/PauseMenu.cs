@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //pause is set to off
         pauseMenu.SetActive(false);
     }
 
@@ -17,19 +18,19 @@ public class PauseMenu : MonoBehaviour
     void OnPause()
     {
         
-            
+            //if game is not paused, pause it 
             if (isPaused == false) {
+                //pauses game
                 PauseGame();
             }
+            //if game is paused then unpause it
             else{
+                //resumes game
                 ResumeGame();
             }
-                
-            
-
-        
     }
 
+//pauses game when the ESCAPE button is pressed
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
@@ -37,6 +38,8 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+
+//resumes game when button pressed
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
@@ -44,12 +47,14 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
+//brings player back to the main menu
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }
 
+//game ends when quit game button is pressed
     public void QuitGame()
     {
         Application.Quit();

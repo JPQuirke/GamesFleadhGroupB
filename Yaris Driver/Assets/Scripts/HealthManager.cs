@@ -43,6 +43,7 @@ public class HealthManager : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        //if player collides with objects it loses 1 life
         if(collision.collider.tag =="Collectables" || collision.collider.tag =="Crash" || collision.collider.tag == "Cone")
         {
                  health -= 1;
@@ -62,6 +63,7 @@ public class HealthManager : MonoBehaviour
                 
 
         }
+        //if player collides with wrench it repairs by 1 health
         else if(collision.collider.tag=="Wrench")
         {
             // enables car car sprites to visualise how many lives are left when car repairs
