@@ -4,7 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class defeatMenu : MonoBehaviour
 {
+    //references the defeat object
     public GameObject defeat;
+    //calls audio references
+    public AudioSource radioSource;
+    public AudioSource collectablesSource;
+    public AudioSource obstaclesSource;
+    public AudioSource engineSource;
+    
 
     public bool isDefeated;
 
@@ -12,6 +19,11 @@ public class defeatMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //enables sounds
+      radioSource.enabled=true;
+      collectablesSource.enabled=true;
+      obstaclesSource.enabled=true;
+      engineSource.enabled=true;
       
         defeat.SetActive(false);
     }
@@ -27,8 +39,17 @@ public class defeatMenu : MonoBehaviour
     {
         //if player is dead send to EndGame() class
           if (isDefeated == false) {
+            //ends game
                 EndGame();
+                //turns off oil canvas
                 oilSplash.SetActive(false);
+                
+                //disables sounds
+                radioSource.enabled=false;
+                collectablesSource.enabled=false;
+               obstaclesSource.enabled=false;
+               engineSource.enabled=false;
+      
                 
             }
           
